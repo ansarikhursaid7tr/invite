@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shagufta & Ubaid - Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Landing / Envelope Screen -->
+    <div id="landing-screen" class="landing-screen">
+        <!-- Rich Landing Graphics to replace grey bg -->
+        <img src="assets/images/floral_corner.png" class="floral-corner top-left corner-large" alt="">
+        <img src="assets/images/floral_corner.png" class="floral-corner top-right corner-large" alt="">
+        <img src="assets/images/floral_corner.png" class="floral-corner bottom-left corner-large" alt="">
+        <img src="assets/images/floral_corner.png" class="floral-corner bottom-right corner-large" alt="">
+        <div class="lantern top-left2"><img src="assets/images/lantern.png" alt="Lantern"></div>
+        <div class="lantern top-right2"><img src="assets/images/lantern.png" alt="Lantern"></div>
+
+        <div class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-content">
+                <div class="bismillah-inv">بسم الله الرحمن الرحيم</div>
+                <p class="invite-verse">"And We created you in pairs"<br><span>(Quran 78:8)</span></p>
+                <img src="assets/images/gold_divider.png" class="graphic-divider small-divider" alt="divider">
+                <p class="invite-text">Save the Date for Our Wedding Celebration</p>
+                <button id="open-btn" class="open-btn">Open Invitation</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <audio id="bg-music" loop>
+            <source src="assets/music.webm" type="audio/webm">
+        </audio>
+
+        <button id="music-toggle" class="music-toggle">
+            <svg id="icon-play" class="icon hidden" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M8 5v14l11-7z" />
+            </svg>
+            <svg id="icon-pause" class="icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+            </svg>
+        </button>
+
+        <!-- Decorative Background Patterns -->
+        <img src="assets/images/bg_pattern.png" class="bg-pattern corner-tl" alt="">
+        <img src="assets/images/bg_pattern.png" class="bg-pattern corner-tr" alt="">
+        <img src="assets/images/bg_pattern.png" class="bg-pattern corner-bl" alt="">
+        <img src="assets/images/bg_pattern.png" class="bg-pattern corner-br" alt="">
+
+        <!-- Decorative Hanging Mobiles -->
+        <div class="hanging left1"><img src="assets/images/hanging_decoration.png" alt="Hanging"></div>
+        <div class="hanging right1"><img src="assets/images/hanging_decoration.png" alt="Hanging"></div>
+
+        <div class="lantern top-left2"><img src="assets/images/lantern.png" alt="Lantern"></div>
+        <div class="lantern top-right2"><img src="assets/images/lantern.png" alt="Lantern"></div>
+
+        <!-- Blessings Section -->
+        <section class="blessings-section section-fade">
+            <img src="assets/images/calligraphy.png" class="calligraphy-img" alt="Bismillah">
+            <img src="assets/images/gold_divider.png" class="graphic-divider" alt="divider">
+            <p class="blessing-text">With the blessings of Allah (SWT) and our beloved parents,<br>we invite you to
+                share our joy.</p>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero-section section-fade">
+            <!-- Architectural Graphic Pillars -->
+            <img src="assets/images/side_border.png" class="side-pillar pillar-left" alt="Pillar">
+            <img src="assets/images/side_border.png" class="side-pillar pillar-right" alt="Pillar">
+
+            <div class="arch-container">
+                <img src="assets/images/footer_graphic.png" class="arch-flourish" alt="Arch Decoration">
+                <div class="names-wrapper">
+                    <h2 class="bride-name">Dr.Ubaid</h2>
+                    <span class="ampersand">&amp;</span>
+                    <h2 class="groom-name">Shagufta</h2>
+                </div>
+                <img src="assets/images/gold_divider.png" class="graphic-divider" alt="divider">
+
+                <!-- Couple inside arch left and right of date -->
+                <div class="inline-portraits">
+                    <div class="portrait-container small-frame">
+                        <!--img src="assets/images/floral_frame.png" class="portrait-frame" alt="Frame"-->
+                        <img src="assets/images/groom.png" alt="Groom" class="person-img groom-img">
+                    </div>
+
+                    <div class="date-display">
+                        <span class="day">Saturday</span>
+                        <span class="date">16</span>
+                        <span class="month">January 2027</span>
+                    </div>
+
+                    <div class="portrait-container small-frame">
+                        <!--img src="assets/images/floral_frame.png" class="portrait-frame" alt="Frame"-->
+                        <img src="assets/images/bride.png" alt="Bride" class="person-img bride-img">
+                    </div>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <span id="countdown-timer">Calculating days...</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Families Section -->
+        <section class="family-section section-fade">
+            <img src="assets/images/gold_divider.png" class="graphic-divider flip-v" alt="divider">
+            <h3 class="section-title">Together with our families</h3>
+            <div class="parents-wrapper">
+                <div class="parents box-card">
+                    <h4 class="relation-title">Son of</h4>
+                    <p class="parent-name">Mr. Nasiruddin Ansari <br>&<br>Mrs. Nikhat Khatoon</p>
+                    <div class="extended-family">
+                        <h5>Siblings & Family</h5>
+                        <p>Shoaib Ansari, Noorain Ansari, Junaid Ansari, Khursaid Ansari, Raihan Ansari, Ayman Ansari
+                        </p>
+                    </div>
+                </div>
+                <div class="parents box-card">
+                    <h4 class="relation-title">Daughter of</h4>
+                    <p class="parent-name">Mr. Abdul Rahim Ansari <br>&<br>Mrs. Fatima Khatoon</p>
+                    <div class="extended-family">
+                        <h5>Siblings & Family</h5>
+                        <p>Javed Akhtar Ansari, Md. Adil Ansari, Riddan Ansari</p>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/gold_divider.png" class="graphic-divider" alt="divider">
+        </section>
+
+        <section id="ceremony" class="details-section section-fade">
+            <h2 class="section-title">Ceremony Details</h2>
+            <img src="assets/images/gold_divider.png" class="graphic-divider" alt="divider">
+
+            <div class="event-card">
+                <img src="assets/images/floral_corner.png" class="card-corner top-left" alt="">
+                <img src="assets/images/floral_corner.png" class="card-corner top-right" alt="">
+                <img src="assets/images/floral_corner.png" class="card-corner bottom-left" alt="">
+                <img src="assets/images/floral_corner.png" class="card-corner bottom-right" alt="">
+
+                <img src="assets/images/mehndi_icon.png" class="event-icon" alt="Mehndi">
+                <h4 class="event-title">Mehndi</h4>
+                <p class="event-time">Friday, 15th January 2027 | 4:00 PM</p>
+                <p class="event-location">Yet to be Announced</p>
+                <p class="event-desc">Join us for an evening of music, henna, and colorful festivities.</p>
+            </div>
+
+            <img src="assets/images/gold_divider.png" class="graphic-divider small-divider" alt="divider">
+
+            <div class="event-card">
+                <img src="assets/images/floral_corner.png" class="card-corner top-left" alt="">
+                <img src="assets/images/floral_corner.png" class="card-corner top-right" alt="">
+                <img src="assets/images/floral_corner.png" class="card-corner bottom-left" alt="">
+                <img src="assets/images/floral_corner.png" class="card-corner bottom-right" alt="">
+
+                <img src="assets/images/ring_icon.png" class="event-icon" alt="Nikah">
+                <h4 class="event-title">Nikah</h4>
+                <p class="event-time">Saturday, 16th January 2027 | 11:00 AM</p>
+                <p class="event-location">Yet to be Announced</p>
+                <p class="event-desc">The sacred wedding ceremony surrounded by loved ones.</p>
+            </div>
+
+            <img src="assets/images/gold_divider.png" class="graphic-divider small-divider" alt="divider">
+
+            <div class="event-card">
+                <img src="assets/images/floral_corner.png" class="card-corner top-left" alt="">
+                <img src="assets/images/floral_corner.png" class="card-corner top-right" alt="">
+                <img src="assets/images/floral_corner.png" class="card-corner bottom-left" alt="">
+                <img src="assets/images/floral_corner.png" class="card-corner bottom-right" alt="">
+
+                <img src="assets/images/walima_icon.png" class="event-icon" alt="Walima">
+                <h4 class="event-title">Walima</h4>
+                <p class="event-time">Sunday, 17th January 2027 | 7:30 PM</p>
+                <p class="event-location">Yet to be Announced</p>
+                <p class="event-desc">The grand wedding reception hosted by the Groom's family.</p>
+            </div>
+        </section>
+
+        <footer class="footer-section section-fade">
+            <h3 class="section-title">Looking Forward</h3>
+            <p>To Celebrate With You</p>
+            <img src="assets/images/gold_divider.png" class="graphic-divider small-divider flip-v" alt="divider">
+            <p>Your presence will add to our joy and happiness.<br>Please keep us in your warmest prayers.</p>
+            <h2 class="hashtag">#ShaguftaWedsUbaid</h2>
+
+            <!-- Majestic Bottom Mandala (Standard flow to prevent overlap) -->
+            <div class="mandala-wrapper">
+                <img src="assets/images/footer_graphic.png" class="footer-bottom-graphic" alt="Footer Mandala">
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
